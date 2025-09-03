@@ -2,14 +2,80 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Il mio sito con link Google Drive</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I miei documenti</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      background: white;
+      border-radius: 20px;
+      padding: 2rem 3rem;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      width: 90%;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+    h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2rem;
+      color: #4a4a8c;
+    }
+    p {
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+      color: #555;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 1rem 0;
+    }
+    a {
+      display: block;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      text-decoration: none;
+      padding: 0.8rem 1.2rem;
+      border-radius: 12px;
+      font-size: 1rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-  <h1>Benvenuto!</h1>
-  <p>Ecco i documenti condivisi:</p>
-  <ul>
-    <li><a href="https://drive.google.com/tuo_link_1" target="_blank">Documento 1</a></li>
-    <li><a href="https://drive.google.com/tuo_link_2" target="_blank">Documento 2</a></li>
-  </ul>
+  <div class="container">
+    <h1>Le mie foto</h1>
+    <ul>
+      <li><a href="https://drive.google.com/tuo_link_1" target="_blank">📄 Documento 1</a></li>
+      <li><a href="https://drive.google.com/tuo_link_2" target="_blank">📄 Documento 2</a></li>
+      <li><a href="https://drive.google.com/tuo_link_3" target="_blank">📄 Documento 3</a></li>
+    </ul>
+    <footer>Creato con ❤️ da Me</footer>
+  </div>
 </body>
 </html>
